@@ -1,10 +1,12 @@
-NAME ?= kernel-flasher
+NAME ?= enigma
 
-VERSION ?= 5.1
+VERSION ?= r0.3
+
+DEVICE ?= athene
 
 DATE := $(shell date +'%Y%m%d-%H%M')
 
-ZIP := $(NAME)-$(VERSION)-$(DATE).zip
+ZIP := $(NAME)-$(VERSION)-$(DEVICE)-$(DATE).zip
 
 EXCLUDE := Makefile README.md *.git* "$(NAME)-"*.zip*
 
